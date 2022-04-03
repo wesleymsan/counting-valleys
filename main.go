@@ -26,13 +26,13 @@ func countingValleys(steps int32, path string) int32 {
 
     for _, v := range path {
         if v == 'U' {
-            if currentPosition == 0 && v == 'U' {
+            if currentPosition == 0 {
                 montainsTraversed ++
             }
             currentPosition ++
         }
         if v == 'D' {
-            if currentPosition == 0 && v == 'D' {
+            if currentPosition == 0 {
                 valleysTraversed ++
             }
             currentPosition --
